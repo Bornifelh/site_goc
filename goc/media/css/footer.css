@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Flama-Basic";
+    src: url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.eot");
+    src: url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.svg#Flama-Basic")format("svg");
+}
+
+.footer{
+    height: 34vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -10px;
+    box-shadow: 0px 0px rgb(255, 255, 255), -0.0rem -0.1em rgba(255, 0, 0, 0.487);
+}
+
+.footer-content-bloc{
+    display: inline-flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.item-content-bloc{
+    justify-content: space-between;
+    border-left: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.item-content-bloc p, a{
+    font-family: 'Flama-Basic', sans-serif;
+    color: #ffffff;
+}
+
+.item-content-bloc a{
+    text-decoration: none;
+}
+
+.item-content-bloc a:hover{
+    color: red;
+}
+
+.item-content-bloc svg{
+    margin-top: auto;
+}
+
+
+.icons-rs{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.icons-rs svg{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.link-sammo-tech{
+    text-decoration: none;
+    color:  #39B1DB;
+}
+
+
+
+.link-sammo-tech:hover{
+    text-decoration: none;
+    color:  #046BA9;
+}
+
+.link-intellekt{
+    text-decoration: none;
+    color:  #ffffff;
+}
+
+
+
+.link-intellekt:hover{
+    text-decoration: none;
+    color:  #ff0000;
+}

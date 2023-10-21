@@ -1,0 +1,79 @@
+.actualite{
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(12, 12, 12, 0.88), rgba(0, 0, 0, 0.95));
+  width: 100%;
+}
+
+
+.item-article{
+    margin-left: 20px;
+    box-shadow: 0px 5px 5px rgba(81, 76, 76, 0.426);
+    border: solid 1 red;
+    height: auto;
+    background-color: #ffffff;
+    width: 350px;
+    margin: auto;
+    display: inline-flex;
+}
+.article-item{
+    width: 350px;
+    align-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.img-article{
+    width: 100%;
+    object-fit: cover;
+    /*border-top-left-radius: 15px;*/
+    /*border-top-right-radius: 15px;*/
+
+}
+
+.item-article-plus{
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.read-article{
+    color: #000000;
+    text-align: justify;
+}
+
+.read-article:hover{
+    color: red;
+}
+
+
+.voir-plus-btn{
+    background-color: none;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    right: 20px;
+    text-align: center;
+    position: absolute;
+}
+
+
+.voir-plus-btn:hover{
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+
+

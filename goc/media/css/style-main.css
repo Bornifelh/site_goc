@@ -1,0 +1,448 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.eot");
+    src: url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.svg#Oswald")format("svg");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+    src: url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto")format("svg");
+}
+
+
+@font-face {
+    font-family: "Flama";
+    src: url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.eot");
+    src: url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/54f5f645f140cd68536c94c32f92d865.svg#Flama")format("svg");
+}
+
+@font-face {
+    font-family: "Flama-Basic";
+    src: url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.eot");
+    src: url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f72941307b0ec68529c502ca030f732f.svg#Flama-Basic")format("svg");
+}
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+    background: #ffffff;
+}
+
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* L'image d'arrière-plan reste fixe pendant le défilement */
+    transition: background-image 0.5s; /* Ajoute une transition pour une transition fluide de l'image d'arrière-plan */
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.content-video-opacity{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    
+}
+
+
+
+.gaboil-video{
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo-link{
+    left: 0;
+  position: absolute;
+}
+
+.logo-mono{
+    margin-left: 80px;
+    width: auto;
+  height: 90px;
+}
+
+.infos-trend{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.rwd-table {
+    color: #ffffff;
+    position:relative;
+    border-collapse: collapse;
+    
+  }
+  
+  .rwd-table th{
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: solid 2px #000000;
+    height: auto;
+    color: #000000;
+  }
+
+  .rwd-table td{
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+    color: #000000;
+  }
+
+
+/*contenu carrousel et espaces services*/
+
+
+
+
+
+/******/
+
+
+/*Nos atouts*/
+.nos-atouts{
+    margin-top: auto;
+    width: 100%;
+    height: 80vh;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    background-color: rgba(4, 4, 4, 0.6);
+}
+
+.div-titre{
+    color: #ffffff;
+}
+
+.div-titre-p{
+    color: #ffffff;
+}
+
+.nos-atouts h1{
+    font-family: 'Oswald',sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.nos-atouts p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.nos-atouts-content{
+    display: inline-flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.atout-item{
+    display: block;
+    width: 300px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon-item{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.atout-item h1{
+    font-size: 2.5rem;
+}
+
+.icon-item svg{
+    width: 80%;
+    height: 80%;
+    color: #ffffff;
+}
+
+.icon-item:hover{
+    background-color: #000000;
+}
+
+
+.lubrifiants{
+    width: 100%;
+    height: 300px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efeded;
+    box-shadow: 5px 5px 10px 15px rgb(0,0,0,0.8);
+}
+
+.text-lubrifiants{
+    margin-left: 200px;
+    width: 50%;
+}
+
+.text-lubrifiants img{
+    display: flex;
+    position: absolute;
+    height: auto;
+    width: 24%;
+    left: 15%;
+    margin-top: -1.5%;
+}
+
+.btn-lubrifiants{
+    margin-right: 100px;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-lubrifiants input{
+    font-family: 'Flama-basic',sans-serif;
+    height: 60px;
+    width: 200px;
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+}
+
+
+.btn-lubrifiants input:hover{
+    background-color: rgb(155, 14, 14);
+    color: #ffffff;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.8);
+    cursor: pointer;
+    
+}
+
+
+
+.content-mot-dg{
+    display: inline-flex;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-items: center;
+    z-index: 1; 
+    background-color: rgba(255, 0, 0);
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.8);
+    
+}
+
+
+.mot-dg{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 50%;
+}
+
+.mot-dg h1{
+    font-family: 'Oswald',sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.mot-dg p{
+    font-family: 'Roboto',sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content-video{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.gaboil-video1{
+    display: flex;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+
+
+.apropos-de-nous{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+
+.contect-tel{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contect-tel .tel{
+    width: 600px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.tel p,
+.tel a{
+    margin-left: 20px;
+    font-family: 'Oswld' , sans-serif;
+}
+
+.tel a{
+    color: red;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Flama-Basic', sans-serif;
+}
+
+.img-left{
+    display:  block;
+}
+
+.img-left img{
+    width: 90px;
+    height: auto;
+    
+}
+
+.content-btn-text{
+    display: block;
+    text-align: center;
+}
+
+.content-btn-text input{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    border:  solid 1px red;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content-btn-text h1{
+    color: #ffffff;
+    font-family: 'Flama-Basic', sans-serif;
+}
+
+.content-btn-text p{
+    color: #ffffff;
+    font-family: 'Flama-Basic', sans-serif;
+}
+
+.content-btn-text a{
+    color: #ff0000;
+    font-family: 'Flama-Basic', sans-serif;
+    text-decoration: none;
+}
+
+.content-btn-text a:hover{
+    text-decoration-line: underline;
+}
+
+.text-lubrifiants h1{
+    font-family: 'Oswald',sans-serif;
+}
+
+.text-lubrifiants p{
+    font-family: 'Flama', sans-serif;
+}
+
+.img-right{
+    display:  block;
+}
+
+.img-right img{
+    width: 90px;
+    height: auto;
+    
+}
+
+
+
+#retourEnHaut {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

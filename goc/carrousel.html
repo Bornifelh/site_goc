@@ -1,0 +1,357 @@
+     <!-- SLIDE -->
+     <div class="full-bg">
+      <div class="container-slide">
+          <div class="side">
+          <div id="carousel">
+              <div id="carousel-1" class="carousel-container slideLeft">
+              <p class="paralelogramo slideDown"></p>
+                <p onclick="changeSlide('left','carousel-1')" class="arrowleft"><-</p>
+                  <img src="media/images/fnd.png" alt="Peugeot Carrousel" class="carimage slideRight">
+                  <p onclick="changeSlide('right','carousel-1')" class="arrowright">-></p>
+              </div>
+              <div id="carousel-2" class="carousel-container">
+              <p class="paralelogramo"></p>
+                 <p onclick="changeSlide('left','carousel-2')" class="arrowleft"><-</p>
+                <img src="media/images/fnd-r2.png" alt="Peugeot Carrousel" class="carimage">
+               <p onclick="changeSlide('right','carousel-2')" class="arrowright">-></p>
+              </div>
+              <div id="carousel-3" class="carousel-container">
+                 <p class="paralelogramo"></p>
+                   <p onclick="changeSlide('left','carousel-3')" class="arrowleft"><-</p>
+                    <img src="media/images/fnd-r3.png" alt="Peugeot Carrousel"  class="carimage">
+                    <p onclick="changeSlide('right','carousel-3')" class="arrowright">-></p>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <style>
+    
+    .arrow {
+      cursor:pointer;
+    }
+    .full-bg {
+    background:#ebe9eb;
+      width:100%;
+      height:600px;
+      overflow:hidden;
+    }
+    .container-slide {
+        overflow:hidden;
+          width:100%;
+       height:600px;
+    }
+    .side {
+    width:100%;
+    height:600px;
+      float:left;
+      overflow:hidden;
+    }
+    .carousel-container {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    }
+    .sideb {
+    background:url('http://serendipiashop.mx/wp-content/uploads/2019/05/test_imgage.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+      overflow:hidden;
+      width:100%;
+      height:600px;
+      cursor:pointer;
+    }
+    .side {
+    font-weight:900;
+    font-style:24px;
+    text-align:center;
+    position:relative;
+    }
+    .button-black{
+    background:#000;
+    color:#fff;
+    position:absolute;
+    top:30%;
+    left:36%;
+    right:auto;
+    font-size:15px !important;
+    padding:2% 5%;
+    cursor:pointer;
+    overflow:hidden;
+    }
+    #carousel {
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+    }
+    
+    #carousel.vertical {
+      flex-direction: row;
+    }
+    
+    /* 2018 spec - For Safari 11, Chrome 69+ */
+    #carousel.snap {
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+    }
+    
+    #carousel.snap > div {
+      scroll-snap-align: center;
+    }
+    
+    #carousel.snap.vertical {
+      flex-direction: row;
+      scroll-snap-type: y mandatory;
+    }
+    .carimage {
+      position:absolute;
+      top:10%;
+      height:auto;
+      width:40%;
+      left:30%;
+      right:20%;
+    }
+    
+    
+    /* 2015 spec - For Firefox, Edge, IE */
+    #carousel.snap {
+      scroll-snap-type: mandatory;
+      -ms-scroll-snap-type: mandatory;
+      scroll-snap-points-x: repeat(100%);
+      -ms-scroll-snap-points-x: repeat(100%);
+    }
+    
+    #carousel.snap.vertical {
+      scroll-snap-points-x: initial;
+      -ms-scroll-snap-points-x: initial;
+      scroll-snap-points-y: repeat(100%);
+      -ms-scroll-snap-points-y: repeat(100%);
+    }
+    #carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #carousel > div {
+      min-width: 100%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+    }
+    
+    #carousel-1 {
+      background-color: #e34747;
+    }
+    
+    #carousel-2 {
+      background-color: #5ab92c;
+    }
+    
+    #carousel-3 {
+      background-color: #226de2;
+    }
+    
+    .arrowleft {
+      position:absolute;
+      z-index:3;
+      top:40%;
+      left:10%;
+      cursor:pointer;
+    }
+    .arrowright {
+      position:absolute;
+      z-index:3;
+      top:40% !important;
+      right:10% !important;
+      cursor:pointer;
+    }
+    .paralelogramo {
+       width: 60%; 
+       height: 90%; 
+       position:absolute;
+       top:-4%;
+       left:0;
+       z-index:0;
+       background: rgba(0,0,0,0.3);
+       -webkit-transform: skew(50deg);
+       -moz-transform: skew(50deg);
+       -ms-transform: skew(50deg);
+       -o-transform: skew(50deg);
+       transform: skew(50deg);
+    }
+    /*
+    ==============================================
+    slideLeft
+    ==============================================
+    */
+    
+    
+    .slideLeft{
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;	
+    
+    animation-duration: 1s;	
+    -webkit-animation-duration: 1s;
+    
+    animation-timing-function: ease-in-out;	
+    -webkit-animation-timing-function: ease-in-out;		
+    
+    visibility: visible !important;	
+    }
+    
+    @keyframes slideLeft {
+    0% {
+      transform: translateX(150%);
+    }		
+    100% {
+      transform: translateX(0);
+    }
+    }
+    
+    @-webkit-keyframes slideLeft {
+    0% {
+      -webkit-transform: translateX(150%);
+    }			
+    100% {
+      -webkit-transform: translateX(0);
+    }
+    }
+    
+    /*
+    ==============================================
+    slideRight
+    ==============================================
+    */
+    
+    
+    .slideRight{
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;	
+    
+    animation-duration: 1s;	
+    -webkit-animation-duration: 1s;
+    
+    animation-timing-function: ease-in-out;	
+    -webkit-animation-timing-function: ease-in-out;		
+    animation-fill-mode: forwards;
+    visibility: visible !important;	
+    animation-delay: 1.6s;
+    opacity:0;
+    }
+    
+    @keyframes slideRight {
+    0% {
+      opacity:0;
+      transform: translateX(-150%);
+    }
+    100% {
+      opacity:1;
+      transform: translateX(0%);
+    }	
+    }
+    
+    @-webkit-keyframes slideRight {
+    0% {
+      opacity:0;
+      -webkit-transform: translateX(-150%);
+    }	
+    100% {
+      opacity:1;
+      -webkit-transform: translateX(0%);
+    }
+    }
+    /*
+    ==============================================
+    slideDown
+    ==============================================
+    */
+    
+    
+    .slideDown{
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;	
+    
+    animation-duration: 1s;	
+    -webkit-animation-duration: 1s;
+    
+    animation-timing-function: ease;	
+    -webkit-animation-timing-function: ease;	
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity:0;
+    visibility: visible !important;						
+    }
+    
+    @keyframes slideDown {
+    0% {
+       opacity:0;
+      top: -500%;
+      left:-100%;
+    }		
+    100% {
+       opacity:1;
+        top: -4%;
+        right:0;
+    }		
+    }
+    
+    @-webkit-keyframes slideDown {
+    0% {
+       opacity:0;
+      top: -500%;
+      left:-100%;
+    }		
+    100% {
+        opacity:1;
+        top: -4%;
+        right:0;
+    }		
+    }
+    
+    
+    </style>
+    <script>
+        function changeSlide(valor, origen) {
+        if(valor === 'right') {
+          switch(origen) {
+            case ('carousel-1'): 
+              document.getElementById('carousel-1').style.display="none";
+              document.getElementById('carousel-2').style.display="block";
+            break;
+            case ('carousel-2'): 
+              document.getElementById('carousel-2').style.display="none";
+              document.getElementById('carousel-3').style.display="block";
+            break;
+            case ('carousel-3'): 
+              document.getElementById('carousel-3').style.display="none";
+              document.getElementById('carousel-1').style.display="block";
+            break;
+          }
+        }
+        else if (valor ===  'left') {
+                  switch(origen) {
+            case ('carousel-1'): 
+              document.getElementById('carousel-1').style.display="none";
+              document.getElementById('carousel-3').style.display="block";
+            break;
+            case ('carousel-2'): 
+              document.getElementById('carousel-2').style.display="none";
+              document.getElementById('carousel-1').style.display="block";
+            break;
+            case ('carousel-3'): 
+              document.getElementById('carousel-3').style.display="none";
+              document.getElementById('carousel-1').style.display="block";
+            break;
+          }
+        }
+      }
+    
+    </script>
+      
